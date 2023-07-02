@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> regpage</title>
+        <script>
+                  var a;
+                  function website()
+                  {
+                    a=document.forms["reg"]["first name"];
+                    if(a.value==""){
+                       window.alert("please enter your first name !!!!");
+                       a.focus()
+                       return false
+                    }
+                  }
+        </script>
+        <style>
+          .regis{
+            height:auto;
+            width:40%;
+            margin-left:40%;
+
+          }
+          
+          body{
+            background-image: url("./image/register\ page\ bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        </style>
+    </head>
+    <body><div class="divi1">
+      <div class="divi3">
+        <form name="reg" id="" action="file:///D:/BandZoogle%20(Project)/Project/home.html" method="get" onsubmit="return website()"  >
+            <fieldset class="regis">
+                <center>   <legend>
+                  <h2>Create An Account </h2>(Fill Up Your Details)
+                </legend></center>
+                <label for="first name">
+                     <h4> FIRST NAME :</h4>
+                </label>
+                 <input type="text" name="first name" id=""   placeholder="first name" >
+                 <br>
+                 <br>
+                <label for="last name">
+                   <h4> LAST NAME :</h4>
+                </label>
+                (It's how you'll appear on BandZoogle )
+                <br>
+                 <input type="text" name="last name" id="" placeholder="last name" >
+                 <br>
+                 <br> 
+                
+                <label for="email">
+                     <h4>EMAIL  :</h4>
+                </label>
+                 <input type="email" name="email" id="" checked=""placeholder="@gmail.com">
+                 <br>
+                 <br>
+                 <label for="password">
+                    <h4>CREATE A PASSWORD :</h4>
+                 </label>
+                 <input type="password"name="password" id=""><br>
+                 <input type="checkbox" name="password" id="" values="">
+                 <label for="password"> Show Password</label><br><br>
+                <label for="file">
+                      <h4> UPLOAD THE ID PROFF : </h4>
+                </label>
+                 <input type="file" name="file" id="" placehold="select a file"><br><br>
+                 <label for="gender">
+                 <h4> GENDER :</h4>
+                 </label>
+                 <input type="radio" id=" " name="gender" value=" ">
+                 <label for="gender">FEMALE</label><br>
+                 <input type="radio" id=" " name="gender" value=" ">
+                 <label for="gender">MALE</label><br>
+                 <input type="radio" id=" " name="gender" value=" ">
+                 <label for="gender">OTHERS</label><br>
+                 <br>
+                 <label for ="lang">
+                  <h4>  LANGUAGE : </h4>
+               </label>
+               <input type="checkbox"   name="lang" id="" values="">
+               <label for="lang">TAMIL</label><br>
+               <input type="checkbox" id=" " name="lang" value=" ">
+               <label for="lang">ENGLISH</label><br>
+               <input type="checkbox" id=" " name="lang" value=" ">
+               <label for="lang">TELUNGU</label><br>
+               <input type="checkbox" id=" " name="lang" value=" ">
+               <label for="lang">MALAYALAM</label><br>
+               <label for="others"> 
+                  OTHERS :
+               </label><br>
+               <input type="search" name="others" id="" placeholder="Kanadam,Hindi,Urudhu,..."><br><br>
+                 <label for ="type">
+                    <h4> MUSICAL GENRES : </h4>
+                 </label>
+                 <input type="checkbox"   name="type" id="" values="">
+                 <label for="type"  >ROCK</label><br>
+                 <input type="checkbox" id=" " name="type" value=" ">
+                 <label for="type">POP</label><br>
+                 <input type="checkbox" id=" " name="type" value=" ">
+                 <label for="type">HIP-HOP</label><br>
+                 <input type="checkbox" id=" " name="type" value=" ">
+                 <label for="type">CLASSICAL</label><br>
+                 <label for="others"> 
+                    OTHERS :
+                 </label><br>
+                  <input type="search" name="others" id="" placeholder="Rhythm,Jazz, Soul,......"><br><br>
+                  <label for="ph.no">
+                    <h4>PHONE NUMBER :</h4>
+                  </label>
+                  <input type="number" name="ph.no" id="" pattern="[0-9]{10}" placeholder="1234567890"><br><br>
+                  <label for="tel.no">
+                   <h4> TELEPHONE NUMBER :</h4>
+                  </label>
+                  <input type="tel" name="tel.no" id="" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" placeholder="0000-00-0000"><br><br>
+                  <label for="color" > 
+                    To Verify You As Human (not a robot) :<br>
+                    Choose Black Color ....
+                  </label><br>
+                  <input type="color" name="color" id=""><br><br>
+                  <label for="lang">
+                   FAVORITE ARTIST :
+                  </label>
+                  <select name="lang" id="" multiple>
+                    <optgroup label="Background Music">
+                        <option values="">A.R.Raghuman</option>
+                        <option values="">Anirudth</option>
+                         <option values="">Yuvan Shankar Raja</option>
+                    </optgroup>
+                     <optgroup label=" Male Vocalist">
+                            <option values="">BTS</option>
+                            <option values="">Simbu</option>
+                             <option values="">Anirudth</option>  
+                        </optgroup>
+                            <optgroup label="Female Vocalist">
+                                <option values="">Shreya Ghoshal</option>
+                                <option values="">Janaki</option>
+                                 <option values="">Saindhavi</option>
+                                 <option values="">Andrea</option>
+                            </optgroup>
+                  </select><br><br>
+                  <label for="date">
+                    DATE OF BIRTH :
+                 </label><br>
+                 <input type="date" name="date" id=""><br><br>
+                  <input type="checkbox" name="verify" id="" values="">
+                 <label for="verify"> I Agree To The Terms And Conditions </label><br><br>
+                 <center>  <input type="submit" > 
+                    <input type="reset" name="" id="" required="" checked="" ></center>
+                 </fieldset>
+        </form>
+      </div>
+    </body>
+</html>
+            

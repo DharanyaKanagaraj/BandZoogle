@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN </title>
+    <style>
+         body{
+            background-image: url("./image/login1\ bg.jpg");
+            background-repeat:no-repeat;
+            background-size: cover;
+         }
+         .image{
+            font-size: x-large;
+            font-family: Italic;
+            width:50%;
+            height:auto;
+            margin-left: 25%;
+            color:white;
+            text-decoration: none;
+            margin-top: 10%;
+         }
+    </style>            
+            <script>
+                var a,b;
+                  function web()
+                  {
+                    a=document.forms["login"]["username"];
+                    b=document.forms["login"]["password"];
+                    if(a.value==" "){
+                       window.alert("please enter your username !!!!");
+                       a.focus()
+                       return false
+                    }
+                    if(b.value==""){
+                       window.alert("please enter your password!!!!");
+                       b.focus()
+                       return false
+                    }
+                    if(a.value=="dharan" && b.value=="2503"){
+                       window.alert("logged-in sucessfully  :)");
+                       return true
+                    }
+                    else{
+                       window.alert("try again :(");
+                       return false
+                    }
+                  }
+               </script>   
+    </head>
+    <body>
+        <form  class="image"name="login" action="file:///D:/BandZoogle%20(Project)/Project/home.html" method="get" onsubmit="return web()"  >
+            <fieldset> 
+                <legend align="center" > <font face="Lucida Handwriting" size="20"color="orange"> LOGIN </font></legend>
+                  <tabel>
+                     <tr>
+                        <th><label for="username"> Enter Userame :</label></th>
+                     
+                        <th><input type="text" name="username" placeholder="username"   > </th>
+                     </tr>
+                          <br><br>
+                     <tr>
+                        <td><label for="password">Password :</label></td>
+                      
+                        <td>  <input type="password" name="password" placeholder="password" > </td>
+                     </tr>
+                  </tabel><br>
+            <input type="checkbox" name="" >
+            <label style="font-size:medium;"> Show Password</label><br>
+            <br>
+         <center>   <a href="file:///D:/BandZoogle%20(Project)/Project/loginpage2.html" style="text-decoration: none;color:aliceblue;">Forget Password?</a></center> 
+             <center>  <input type="submit"></center> <br>
+              Not Have An Account ?  <a href="file:///D:/BandZoogle%20(Project)/Project/regpage.html" style="text-decoration: none;color:aliceblue;"><mark style="color:black;">Create Account</mark></a>
+        </fieldset>
+        </form>
+        
+    </body>
+</html>
